@@ -1,4 +1,4 @@
-class: CommnadLineTool
+class: CommandLineTool
 doc: FastQC
 id: fastqc-0.11.4
 label: "FastQC v0.11.4"
@@ -6,8 +6,7 @@ label: "FastQC v0.11.4"
 cwlVersion: v1.0
 
 dct:creator:
-  "@id": "http://orcid.org/0000-0003-0342-8531"
-  foaf:name: Daniel Standage
+  foaf:name: Anish Chakka
   foaf:mbox: "mailto:anibhax@gmail.com"
 
 requirements:
@@ -25,7 +24,7 @@ inputs:
     inputBinding:
       position: 1
 
-output:
+outputs:
   zippedFile:
     type: File
     outputBinding:
