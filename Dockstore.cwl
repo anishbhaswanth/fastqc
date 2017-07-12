@@ -34,3 +34,4 @@ outputs:
     outputBinding:
     glob: .
 
+baseCommand: ["fastqc"]
