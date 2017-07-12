@@ -12,6 +12,7 @@ dct:creator:
 requirements:
   - class: DockerRequirement
     dockerPull: "quay.io/anishbhaswanth/fastqc:latest"
+
 hints:
   - class: ResourceRequirement
     coresMin: 1
@@ -32,6 +33,6 @@ outputs:
   report:
     type: Directory
     outputBinding:
-    glob: .
+      glob: .
 
-baseCommand: ["fastqc"]
+baseCommand: ["fastqc", "--outdir", ".", "--extract"]
